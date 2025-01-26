@@ -1,0 +1,23 @@
+1) To install docker in Linux : yum install docker -y.
+2) To see the docker version : docker --version.
+3) To start the docker service : service docker start.
+4) To check service is start or not : service docker status.
+5) To check the docker information : docker info.
+6) To see all images in local machine : docker images.
+7) To find images in docker hub : docker search image name.
+8) To download image from docker hub to local : docker pull image name.
+9) To download and run image at a time : docker run -it image name /bin/bash. 
+10) To give names of a container : docker run -it --name raham img-name /bin/bash.
+11) To start container : docker start container name.
+12) To go inside the container : docker attach container name.
+13) To see all the details inside container : cat /etc/os-release.
+14) To get outside of the container : exit.
+15) To see all containers : docker ps -a.
+16) To see only running containers : docker ps (ps: process status).
+17) To see only exited containers: docker ps -q -f "state=exited".
+18) To stop the container : docker stop container name.
+19) To delete container : docker rm container name.
+20) To stop all the containers : docker stop $(docker ps -a -q).
+21) To delete all the stopped containers : docker rm $(docker ps -a -q).
+22) To delete all images : docker rmi -f $(docker images -q).
+23) Docker rename: is used to rename the container : docker rename old_container new_container
